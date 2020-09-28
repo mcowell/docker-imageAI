@@ -1,5 +1,5 @@
 # https://towardsdatascience.com/object-detection-with-10-lines-of-code-d6cb4d86f606
-FROM python:3.5
+FROM python:3.8-slim-buster
 RUN pip3 install --upgrade pip setuptools virtualenv
 WORKDIR /imageai/
 COPY requirements.pip requirements.pip
