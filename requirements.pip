@@ -1,11 +1,11 @@
-tensorflow
-numpy==1.19.0
+tensorflow==1.13.1
+numpy==1.16.1
 scipy
 opencv-python
 pillow
 matplotlib
 h5py
-keras
+keras==2.2.4
 jsonpickle
 requests
 imageai
