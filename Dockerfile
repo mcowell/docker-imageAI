@@ -1,5 +1,5 @@
 # https://towardsdatascience.com/object-detection-with-10-lines-of-code-d6cb4d86f606
-FROM python:3.6-slim-buster
+FROM python:3.6
 RUN pip3 install --upgrade pip setuptools virtualenv
 WORKDIR /imageai/
 COPY requirements.pip requirements.pip
@@ -9,9 +9,3 @@ ADD https://lh3.googleusercontent.com/pw/ACtC-3crNPXWpNNMmD-vLfLH0hyXFIMTeSC-mUc
 COPY object_detection.py ./
 EXPOSE 8080
 CMD python object_detection.py
-# sudo docker build -t imageai --file Dockerfile .
-# sudo docker run --rm -it imageai /bin/bash
-# sudo docker run -p 127.0.0.1:8080:8080 -d imageai
-# sudo docker container ls
-# curl -X POST 127.0.0.1:8080 --data-binary @/home/breim/Desktop/foto1.jpg # if post mode, i will finish this soon.
-# docker exec -it imageai bash # login in docker
