@@ -8,4 +8,4 @@ h5py
 keras
 jsonpickle
 requests
-https://github.com/OlafenwaMoses/ImageAI/releases/download/2.1.0/imageai-2.1.0-py3-none-any.whl
+imageai
