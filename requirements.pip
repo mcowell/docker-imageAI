@@ -8,4 +8,4 @@ h5py
 keras==2.2.4
 jsonpickle
 requests
-imageai
+imageai --upgrade
